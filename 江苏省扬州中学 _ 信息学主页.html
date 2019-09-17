@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<!-- saved from url=(0042)http://lshoss.mi-ku.xyz/website/index.html -->
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <!--  Meta  -->
+  
+  <title>江苏省扬州中学 | 信息学主页</title>
+  
+  <!--  Styles  -->
+  <link rel="stylesheet" href="./江苏省扬州中学 _ 信息学主页_files/index.css" media="screen and (min-device-width: 500px)">
+  <link rel="stylesheet" href="./江苏省扬州中学 _ 信息学主页_files/mobile.css" media="screen and (max-device-width: 500px)">
+  <script src="./江苏省扬州中学 _ 信息学主页_files/vue.min.js.download"></script>
+</head>
+<body>
+	<div id="header">
+		<div class="top"></div>
+		<div class="navbar">
+			<img src="./江苏省扬州中学 _ 信息学主页_files/ITI_title.png">
+			<ul>
+        <a href="#intro"><li>简介</li></a>
+        <a href="#yzzx"><li>百年扬中</li></a>
+        <a href="#activity"><li>多彩活动</li></a>
+        <a href="#xxxt"><li>信息学堂</li></a>
+        <a href="#noip"><li>信息竞赛</li></a>
+        <a href="#project"><li>应用开发</li></a>
+        <a href="#about"><li>关于我们</li></a>
+        <a href="#growth"><li>联系我们</li></a>
+      </ul>
+		</div>
+	</div>
+	<div id="banner">
+		<div class="block">
+			<h1>未 来</h1>
+			<hr>
+      <p>因信息，从此展开</p>
+		</div>
+	</div>
+	<div id="intro">
+		<div class="block">
+      <div class="content">
+        <h1>简介</h1>
+        <p>江苏省扬州中学信息学主页，是由江苏省扬州中学学生自发创建并维护的实验性网页，展示了江苏省扬州中学在自治自动的办学思想的引领下，在信息学领域的成果和建树。相信在扬州中学锲而不舍的信息化步伐中，这一所浸润了历史积淀的百年名校将与时代并进，同学们也必当成为这一高速发展的时代的引领者。在这里，向您展开的，正是这一幅宏伟而细致的画卷。</p>
+      </div>
+      <img src="./江苏省扬州中学 _ 信息学主页_files/phone.png">
+    </div>
+    <hr class="left">
+    <hr class="right">
+	</div>
+  <div id="yzzx">
+    <img class="logo" src="./江苏省扬州中学 _ 信息学主页_files/logo.png">
+    <img class="name" src="./江苏省扬州中学 _ 信息学主页_files/name.png">
+  </div>
+  <div id="yzzx_intro" class="trans_banner"  v-on:mouseover="starthover" v-on:mouseout="endhover">
+    <div class="block"  v-bind:style="block_style">
+      <transition name="trans_fade">
+        <div v-if="show_title">
+          <h1>积 淀</h1>
+          <p>百年名校的浸润与滋养</p>
+        </div>
+      </transition>
+    </div>
+    <transition name="trans_fade">
+      <div class="intro" v-if="show_intro">
+        <p>江苏省扬州中学始于1902年创立的仪董学堂，是一所有百年办学历史的名校。扬州中学素以办学立意高峻、校风优良、名师荟萃、人才辈出著称于世。在百年办学过程中，扬州中学始终坚持“突出树人宗旨，努力服务社会”的办学理念和“人格健全、学术健全、自治自动、体育兼重”的办学思想，形成了“正直向上，热于求知”的优良校风，“进德修业，教书育人”的教风和“慎思明辨，格物致知”的学风。</p>
+        <p>学校办学特色是追求“科学与人文相融合”，并力求在学校管理、教育、教学等方面全面体现这一特色。课程设置体现能力本位和文理并重的思想，注重建设高品位的校园文化，保证学生自主发展的空间。近几年高考高分考生人数、重点大学达线率和本科达线率均居全省前列，各类全国、省学科竞赛成绩骄人。</p>
+        <a href="http://61.155.62.52/yzzx" target="_BLANK">
+          <div class="href">了解更多</div>
+        </a>
+      </div>
+    </transition>
+  </div>
+	<div id="activity">
+    <div id="limit">
+      <h1>活 动</h1>
+      <div class="halfcircle up"></div>
+      <iframe src="./江苏省扬州中学 _ 信息学主页_files/activity.svg" width="726" height="100" frameborder="no"></iframe>
+      <div class="content">
+        <div class="halfcircle down"></div>
+        <div class="halfcircle down"></div>
+        <div class="halfcircle down"></div>
+      </div>
+      <div class="content">
+        <div class="block">
+          <img src="./江苏省扬州中学 _ 信息学主页_files/book.png">
+          <div class="title">信息学堂</div>
+          <p>由学生主办的课程，为对信息学有兴趣的同学提供入门课，让大家体会算法的精妙和信息的思想。</p>
+        </div>
+        <div class="block">
+          <img src="./江苏省扬州中学 _ 信息学主页_files/award.png">
+          <div class="title">信息竞赛</div>
+          <p>参加NOIP等信息竞赛，为我校赢得荣誉，更赢得自主招生的机会，证明自己的实力！</p>
+        </div>
+        <div class="block">
+          <img src="./江苏省扬州中学 _ 信息学主页_files/lightbulb.png">
+          <div class="title">创意开发</div>
+          <p>和学长老师一起，将信息学能力转化为实际产品，开发网页、APP等有趣而有用的应用。</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="xxxt">
+    <img class="poster" src="./江苏省扬州中学 _ 信息学主页_files/poster.jpg">
+    <div class="block">
+      <h1>信息学堂</h1>
+      <p>对编程感兴趣却苦于无处学习？ 对算法感到困惑又看不懂书籍？</p>
+      <p>信息学堂应运而生！</p>
+      <p>信息学堂组织了江苏省扬州中学的信息学奥林匹克竞赛的参赛选手，与我校信息教研组老师合作，面向所有感兴趣的学生提供课程,旨在普及计算机技术、培养信息学思维、促进我校信息化进程。</p>
+      <p>目前我们已经举办过2018、2019暑期入门课，效果很好，广受好评！更多课程还在计划中...</p>
+    </div>
+  </div>
+  <div id="noip">
+    <h1>信息竞赛</h1>
+    <div class="row">
+      <div class="background"></div>
+      <div class="rowblock">
+        <img src="./江苏省扬州中学 _ 信息学主页_files/award.jpg">
+        <p>全国青少年信息学奥林匹克联赛（NOIP）是一项面向全国青少年的信息学竞赛和普及活动，旨在向那些在中学阶段学习的青少年普及计算机科学知识；给学校的信息技术教育课程提供动力和新的思路；给那些有才华的学生提供相互交流和学习的机会；通过竞赛和相关的活动培养和选拔优秀的计算机人才。本竞赛及其相关活动遵循开放性原则，任何有条件和有兴趣的学校和个人，都可以在业余时间自愿参加。本活动不和现行的学校教学相冲突，也不列入教学计划，是课外性质的因材施教活动。</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="background"></div>
+      <div class="rowblock">
+        <p>江苏省扬州中学长期开展信息学奥赛培训，并每年参加JSOI省夏令营等，为选手提供了丰富的机会和高质量的教育资源。在此基础上，扬州中学信息竞赛频创佳绩，在NOIP2017中，我校斩获信息学奥林匹克竞赛国家一等奖5人、江苏省一等奖若干，并有数个选手冲击江苏省信息学奥赛省队选拔赛，取得了不错的成绩。<br>相信在未来，我校的信息学竞赛将会更加灿烂辉煌！</p>
+        <img src="./江苏省扬州中学 _ 信息学主页_files/photo.jpg">
+      </div>
+    </div>
+  </div>
+
+  <div id="project" class="project">
+    <h1>应用开发</h1>
+    <div class="row">
+      <div class="background"></div>
+      <div class="rowblock rowblock_mobile">
+        <img src="./江苏省扬州中学 _ 信息学主页_files/ua.png">
+        <p>在这里我们可以抓住脑海里闪过的灵光，与朋友和导师加以讨论，做出实际的应用。有些是与学校教务系统息息相关，而有的则更贴近于学生生活。想法无优劣，创意无好坏，只要你敢想敢做，我们就可以一起实现。<br>我们已经运行在使用的有统一身份认证系统、学生事务系统、扬中拓展性课程选课系统、扬中匿名墙等等，便利了学校及学生们的生活。</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="background"></div>
+      <div class="rowblock">
+        <p>两图均为工程截图，页面简洁美观，代码优雅易读。方便了日后的更新升级以及新ITI同学的学习、借鉴与维护。这里是锻炼与磨砺的场所，亦是你展翅与翱翔的舞台，我们相信，日后的ITI冠名的项目开发，会是质量的代名词，ITI的产品将在校内外大放异彩！</p>
+        <img src="./江苏省扬州中学 _ 信息学主页_files/sa.png">
+      </div>
+      <div class="rowblock_mobile hidden"> 
+        <img src="./江苏省扬州中学 _ 信息学主页_files/sa.png"> 
+        <p>两图均为工程截图，页面简洁美观，代码优雅易读。方便了日后的更新升级以及新ITI同学的学习、借鉴与维护。这里是锻炼与磨砺的场所，亦是你展翅与翱翔的舞台，我们相信，日后的ITI冠名的项目开发，会是质量的代名词，ITI的产品将在校内外大放异彩！</p>
+      </div>
+    </div>
+  </div>
+
+  <div id="about" class="trans_banner" v-on:mouseover="starthover" v-on:mouseout="endhover">
+    <div class="block" v-bind:style="block_style">
+      <transition name="trans_fade">
+        <div v-if="show_title">
+          <h1>初 心</h1>
+          <p>始于兴趣 终于热爱</p>
+        </div>
+      </transition>
+    </div>
+    <transition name="trans_fade">
+      <div class="intro" v-if="show_intro">
+        <p><b>yzITI</b>，全名江苏省扬州中学信息技术综合应用协会，是一个由学校信息中心老师、信息竞赛杰出选手、和全校热爱网络技术和软件开发的极客组成的综合应用团体。这里有刚刚接触的新手小白，这里有精通算法的竞赛大佬。起步或许有先后，都有的是一颗对信息学充满热情的心。</p>
+        <p>我们希望ITI能成为一个如同清华大学TUNA协会(全名清华大学学生网络与开源软件协会)一样的组织，给所有对信息技术感兴趣的同学提供一个平台，也为扬州中学的信息化建设添砖加瓦。ITI促进了有兴趣有能力的同学和老师之间的沟通，减轻信息中心老师负担，为我校各项应用平台提供维护人员。同时，对于yzITI中的杰出学生们来说，在高中阶段能有一个对信息技术的综合应用实践，对大学乃至未来在计算机这个行业内的发展都有难以估量的帮助。在各项活动的组织开展中，更能够锻炼领导能力和合作能力，促进学生的全面多样发展。</p>
+        <a href="http://61.155.62.52/yzzx" target="_BLANK">
+          <div class="href">了解更多</div>
+        </a>
+      </div>
+    </transition>
+  </div>
+
+  <div id="growth" class="trans_banner" v-on:mouseover="starthover" v-on:mouseout="endhover">
+    <div class="block" v-bind:style="block_style">
+      <transition name="trans_fade">
+        <div v-if="show_title">
+          <h1>成 长</h1>
+          <p>慎思明辨 格物致知</p>
+        </div>
+      </transition>
+    </div>
+    <transition name="trans_fade">
+      <div class="intro" v-if="show_intro">
+        <p>信息学作为一门日新月异的学科，尤其需要我们不断地创新和成长。在江苏省扬州中学信息学相关的活动中，我们收获的不仅仅是学术上的成就，更有一种人生的经验和进步。在信息学堂上，我们锻炼了组织能力；在信息竞赛的赛场上，我们学到了冷静和稳定；在平时的开发过程中我们更学到了很多，很多......</p>
+        <p>另外，我们诚意邀请每一位有意向、有时间的同学，帮助我们建设和维护诸如扬州中学信息学主页的服务，或者做出一定的贡献。在这些过程中，可以学到的将不仅仅是一点应用的知识，更有每一个人的成长。未来——因信息，在此展开。</p>
+      </div>
+    </transition>
+  </div>
+  <div id="footer">
+    <div class="limit">
+      <div class="left">
+        <h1>ITI</h1>
+        <hr>
+        <div class="content">Powered by Phantomlsh</div>
+      </div>
+      <div class="right">
+        <div class="content">江苏省扬州中学</div>
+        <div class="content">Supported by <span>Delta ITI</span></div>
+        <div class="content">Email:<span>yzzxITI@163.com</span></div>
+      </div>
+    </div>
+  </div>
+  <script src="./江苏省扬州中学 _ 信息学主页_files/index.js.download"></script>
+
+</body></html>
