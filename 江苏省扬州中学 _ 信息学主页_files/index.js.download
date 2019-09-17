@@ -1,0 +1,62 @@
+var yzzx_vm = new Vue({
+	el: "#yzzx_intro.trans_banner",
+	data:{
+		block_style: "",
+		show_intro:false,
+		show_title:true
+	},
+	methods:{
+		starthover:function(){
+			this.block_style="width:100%;";
+			this.show_intro=true;
+			this.show_title=false;
+		},
+		endhover:function(){
+			this.block_style="width:500px;";
+			this.show_intro=false;
+			this.show_title=true;
+		}
+	}
+})
+
+var about_vm = new Vue({
+	el: "#about.trans_banner",
+	data:{
+		block_style: "",
+		show_intro:false,
+		show_title:true
+	},
+	methods:{
+		starthover:function(){
+			this.block_style="width:100%;";
+			this.show_intro=true;
+			this.show_title=false;
+		},
+		endhover:function(){
+			this.block_style="width:500px;";
+			this.show_intro=false;
+			this.show_title=true;
+		}
+	}
+})
+
+var growth_vm = new Vue({
+	el: "#growth.trans_banner",
+	data:{
+		block_style: "",
+		show_intro:false,
+		show_title:true
+	},
+	methods:{
+		starthover:function(){
+			this.block_style="width:100%;";
+			this.show_intro=true;
+			this.show_title=false;
+		},
+		endhover:function(){
+			this.block_style="width:500px;";
+			this.show_intro=false;
+			this.show_title=true;
+		}
+	}
+})

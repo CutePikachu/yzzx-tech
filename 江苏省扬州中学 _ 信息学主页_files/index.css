@@ -1,0 +1,629 @@
+body{
+	margin: 0;
+}
+
+#header{
+	min-width: 1080px;
+	background-color: #001133;
+	height: 100px;
+}
+
+#header div.top{
+	height: 3px;
+	background-color: #1faeff;
+}
+
+#header div.navbar {
+  height: 100px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#header ul{
+  display:flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+#header li{
+  margin: 0 7px;
+  padding: 5px 10px;
+  text-align: center;
+  display:inline-block;
+  font-family:"微软雅黑";
+  color:white;
+  cursor:pointer;
+}
+
+#header li:hover{
+  border-radius: 5px;
+  background-color: #569ce3;
+}
+
+#header a{
+  color: white;
+  text-decoration: none;
+}
+
+#banner{
+  height:700px;
+  min-width: 1080px;
+  background: #001133 url(../images/iti.png) no-repeat;
+  background-size: cover;
+}
+
+#banner div.block{
+	margin: 0 12%;
+	width: 30%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	transition: width 1s ease-in-out;
+}
+
+#banner div.block:hover{
+	width: 40%;
+}
+
+#banner h1{
+	color: white;
+	font-family: "幼圆";
+	font-size: 120px;
+	margin: 0;
+}
+
+#banner p{
+	align-self: flex-end;
+	margin: 10px;
+	font-family: "幼圆";
+	font-size: 30px;
+	color: white;
+}
+
+#banner hr{
+	width: 100%;
+	border: 2px solid;
+	border-color: white;
+}
+
+#intro{
+  position: relative;
+  z-index: 1;
+  padding: 60px 0;
+  width:100%;
+  min-width: 1080px;
+  height: 400px;
+}
+
+#intro div.block{
+  position: relative;
+  z-index: 3;
+  margin: 0 auto;
+  height: 100%;
+  width: 900px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+#intro div.content{width: 500px;}
+
+#intro h1{color: #569ce3;}
+
+#intro p{
+  color: #8c8c8c; 
+  line-height: 30px;
+}
+
+#intro img{
+  width: 300px;
+  margin-top: 30px;
+}
+
+#intro hr{
+  position: absolute;
+  z-index: 2;
+  border: 1px solid;
+  border-color: #d6d9d9;
+}
+
+#intro hr.left{
+  left: 0;
+  bottom: 87px;
+  width: 65%;
+}
+
+#intro hr.right{
+  right: 0;
+  bottom: 96.5px;
+  width: 30%;
+}
+
+#yzzx{
+  min-width: 1080px;
+  height: 400px;
+  background-color: #001133;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0.9;
+}
+
+#yzzx img.logo{width: 12%;}
+
+#yzzx img.name{width: 75%;}
+
+#yzzx_intro{
+  position: relative;
+  min-width: 1080px;
+  background: #001133 url("../images/yzzx/shurentang.jpg") no-repeat center;
+  background-size: cover;
+  height: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+#yzzx_intro div.block{
+  width: 500px;
+  height: 100%;
+  padding-left: 50px;
+  background-color: rgba(0,17,51,0.7);
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  transition: width 2s ease-in-out;
+}
+
+#yzzx_intro h1{
+  font-family: "华文行楷";
+  font-size: 120px;
+  color: white;
+  margin-bottom: 20px;
+}
+
+#yzzx_intro .block p{
+  margin-top: 20px;
+  font-family: "华文行楷";
+  font-size: 40px;
+  color: white;
+}
+
+#yzzx_intro div.intro{
+  width: 80%;
+  height: 100%;
+  margin: auto;
+  top: 0;bottom: 0;left: 0;right: 0;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#yzzx_intro .intro p{
+  font-family: "华文行楷";
+  color: white;
+  font-size: 30px;
+}
+
+#yzzx_intro .intro div.href{
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #569ce3;
+}
+
+#yzzx_intro .intro a{
+  text-decoration: none;
+  font-family: "华文行楷";
+  color: white;
+  font-size: 30px;
+}
+
+.trans_fade-enter-active, .trans_fade-leave-active{
+  transition: opacity 2s;
+}
+.trans_fade-enter, .trans_fade-leave-to{
+  opacity: 0;
+}
+
+#activity{
+  background-color: white;
+  width: 100%;
+  height: 600px;
+  min-width: 1080px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#activity #limit{
+	height: 100%;
+	width: 1080px;
+	display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#activity h1{
+  font-family: "幼圆";
+  font-size: 50px;
+  margin: 20px 0;
+}
+
+#activity div.content{
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+#activity div.halfcircle{
+  width: 10px;
+  height: 5px;
+  border: 3px solid;
+  border-color: #1faeff;
+}
+
+#activity div.halfcircle.up{
+  border-radius: 0 0 8px 8px;
+  border-top-style: none;
+}
+#activity div.halfcircle.down{
+  border-radius: 8px 8px 0 0;
+  border-bottom-style: none;
+}
+
+#activity div.block{
+  width: 25%;
+  height: 280px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 2px;
+  border-color: white;
+  border-style: none solid solid none;
+  border-radius: 8px;
+}
+
+#activity div.block:hover{
+  border-color: #dddddd;
+}
+
+#activity img{
+  margin: 0 0 20px 0;
+}
+
+#activity div.title{
+  font-family: "幼圆";
+  font-weight: bold;
+  font-size: 30px;
+}
+
+#activity p{
+  font-family: "微软雅黑";
+  color: grey;
+  text-align: center;
+}
+
+#xxxt{
+  height: 500px;
+  min-width: 1080px;
+  background-color: #001133;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#xxxt img.poster{
+  border-radius: 15px;
+  width: 400px;
+}
+
+#xxxt div.block{
+  height: 400px;
+  width: 600px;
+  margin: 0 40px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+#xxxt h1{
+  margin: 0 0 10px 0;
+  font-family: "隶书";
+  font-size: 60px;
+}
+
+#xxxt p{
+  margin: 10px 0;
+  font-size: 20px;
+  font-family: "隶书";
+}
+
+#noip{
+  position: relative;
+  z-index: -2;
+  height: 900px;
+  min-width: 1080px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+}
+
+#noip h1{
+  font-family: "隶书";
+  font-size: 60px;
+}
+
+#noip div.row{
+  width: 100%;
+  position: relative;
+  margin: 10px 0;
+}
+
+#noip div.rowblock{
+  margin: 0 auto;
+  position: relative;
+  display: flex;
+  width: 1080px;
+  justify-content: center;
+  align-items: center;
+  z-index: 0;
+}
+
+#noip div.background{
+  width: 100%;
+  height: 90%;
+  background-color: #fff;
+  top: 5%;
+  position: absolute;
+  z-index: -1;
+}
+
+#noip img{
+  border-radius: 10px;
+  margin: 0 20px;
+}
+
+#noip p{
+  padding: 0 20px;
+  font-family: "隶书";
+  font-size: 20px;
+}
+
+#project{
+  position: relative;
+  z-index: -2;
+  height: 700px;
+  min-width: 1080px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #001133;
+  color: white;  
+}
+
+#project h1{
+  font-family: "隶书";
+  font-size: 60px;
+}
+
+#project div.row{
+  width: 100%;
+  position: relative;
+  margin: 10px 0;
+}
+
+#project div.rowblock{
+  margin: 0 auto;
+  position: relative;
+  display: flex;
+  width: 1080px;
+  justify-content: center;
+  align-items: center;
+  z-index: 0;
+}
+
+#project div.hidden{
+  display: none;
+}
+
+#project div.background{
+  width: 100%;
+  height: 90%;
+  background-color: #001133;
+  top: 5%;
+  position: absolute;
+  z-index: -1;
+}
+
+#project img{
+  border-radius: 10px;
+  margin: 0 20px;
+  width: 28vw;
+  border: 1px white solid;
+}
+
+#project p{
+  color: white;
+  font-family: "隶书";
+  padding: 0 20px;
+  font-size: 20px;
+}
+
+#about{
+  position: relative;
+  min-width: 1080px;
+  background: #001133 url("../images/yzzx/gate.jpg") no-repeat center;
+  background-size: cover;
+  height: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+#about div.block{
+  width: 500px;
+  height: 100%;
+  padding-left: 50px;
+  background-color: rgba(0,17,51,0.7);
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  transition: width 2s ease-in-out;
+}
+
+#about h1{
+  text-align: left;
+  font-family: "华文行楷";
+  font-size: 120px;
+  color: white;
+  margin-bottom: 20px;
+}
+
+#about .block p{
+  text-align: left;
+  margin-top: 20px;
+  font-family: "华文行楷";
+  font-size: 40px;
+  color: white;
+}
+
+#about div.intro{
+  width: 80%;
+  height: 100%;
+  margin: auto;
+  top: 0;bottom: 0;left: 0;right: 0;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#about .intro p{
+  font-family: "华文行楷";
+  color: white;
+  font-size: 30px;
+}
+
+#about .intro div.href{
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #569ce3;
+}
+
+#about .intro a{
+  text-decoration: none;
+  font-family: "华文行楷";
+  color: white;
+  font-size: 30px;
+}
+
+#growth{
+  position: relative;
+  min-width: 1080px;
+  background: #001133 url("../images/yzzx/growth.jpg") no-repeat center;
+  background-size: cover;
+  height: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+#growth div.block{
+  width: 500px;
+  height: 100%;
+  padding-right: 50px;
+  background-color: rgba(0,17,51,0.7);
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  transition: width 2s ease-in-out;
+}
+
+#growth h1{
+  text-align: right;
+  font-family: "华文行楷";
+  font-size: 120px;
+  color: white;
+  margin-bottom: 20px;
+}
+
+#growth .block p{
+  text-align: right;
+  margin-top: 20px;
+  font-family: "华文行楷";
+  font-size: 40px;
+  color: white;
+}
+
+#growth div.intro{
+  width: 80%;
+  height: 100%;
+  margin: auto;
+  top: 0;bottom: 0;left: 0;right: 0;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#growth .intro p{
+  font-family: "华文行楷";
+  color: white;
+  font-size: 30px;
+}
+
+#footer{
+  width: 100%;
+  min-width: 1080px;
+  height: 200px;
+  background-color: #001133;
+}
+
+#footer div.limit{
+  margin: 0 auto;
+  width: 1080px;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#footer div.left{width: 200px;}
+
+#footer div.right{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+#footer h1{
+  margin: 10px 0;
+  font-family: "Segoe UI Black";
+  color: #1faeff;
+}
+
+#footer hr{
+  border: 1px solid;
+  border-color: #dddddd;
+}
+
+#footer div.content{
+  color: white;
+}
+
+#footer span{
+  color: #1faeff;
+}
